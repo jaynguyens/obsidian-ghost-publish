@@ -40,6 +40,28 @@ Note:
 - Run `npm run build`
 - Copy over `main.js` and `manifest.json` to your vault `VaultFolder/.obsidian/plugins/your-plugin-id/`.
 
+### Publishing your first article to ghost.
+
+After installing the plugin as described above, you want to publish your first article.
+To do that, the plugin uses front matter as a source of metadata. 
+
+At the top of your artical start with: 
+```
+---
+title: string
+tags: 
+- tag1
+- tag2
+featured: boolean
+published: boolean
+excerpt: string
+--- 
+``` 
+
+the absolute minimum you should use to send your article to gost is:
+
+`title: <title of your article>`
+
 ### Issues & Requests
 
 - For feature requests, please take use of Discussions.
